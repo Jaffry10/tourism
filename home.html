@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@1,400&display=swap" rel="stylesheet">
+    <title>Tourism</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header{
+        background: rgb(93, 0, 255);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+    }
+    a{
+        text-decoration: none;
+    }
+    .logo{
+        font-family: 'Pacifico', cursive;
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+        margin-left: 5px;
+    }
+    nav{
+        padding: 0px 12px;
+    }
+    .right_links{
+        color: rgba(255, 255, 255, 0.707);
+        font-size: 1.2em;
+        font-weight: 500;
+        margin: 0px 10px;
+        transition: all 0.2s;
+    }
+    .right_links:hover{
+        color: white;
+    }
+    .back{
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .dark{
+        background: rgba(0, 0, 0, 0.47);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .back_img{
+        width: 100%;
+    }
+    .back_logo{
+        font-size: 6em;
+        font-weight: 400;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        color: #ffffff;
+    }
+    .back_text{
+        font-family: 'Pacifico', cursive;
+        font-size: 2em;
+        font-weight: 400;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        color: #d5c3ff;
+    }
+    .cards_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cards{
+        width: 400px;
+        height: 300px;
+        background: rgb(255, 255, 255);
+        margin: 20px;
+        border-radius: 12px;
+        box-shadow: 1px 1px 19px rgba(172, 172, 172, 0.708);
+        overflow: hidden;
+        
+    }
+    .heading{
+        text-align: center;
+        font: 1.7em sans-serif;
+    }
+    .img_container{
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        transition: all 0.3s;
+        
+    }
+    .cards:hover .img_container{
+        height: 100%;
+    }
+    .cards:hover .cards{
+        width: 500px;
+    }
+    .card_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .text{
+        margin: 0px 10px;
+    }
+    footer{
+        color: white;
+       
+        width: 100%;
+        background: rgb(153, 1, 255);
+    }
+    .textt{
+        width: 50%;
+    }
+    .cards_text{
+        display: flex;
+        align-items: center;
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="home.html">Tourism.com</a>
+        </nav>
+        <nav>
+            <a class="right_links" href="about.html">About Us</a>
+            <a class="right_links" href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <section>
+        <div class="back">
+            <img class="back_img" src="chaman.jpg" alt="">
+            <div class="dark"></div>
+            <h1 class="logo back_logo">India Tourism</h1>
+            <p class="back_text">Make your dreams come true</p>
+        </div>
+    </section><br>
+    <br>
+    <br>
+    <section class="heading">
+            <h1><u>About India</u></h1>    
+            <p>Tourism in India has shown a phenomenal growth in the past decade.
+                 One of the reasons is that the Ministry of tourism, India has realized the potential of tourism in India during vacations.
+                India tourism with its foggy hill stations, capitivating beaches, historical monuments, golden deserts, piligrimage sites, rich wildlife and colorful fairs capture the heart of every tourist.</p>   
+    </section> <br>
+    <br>
+    <section class="heading">
+            <h1><u>Plan Your Next Travel</u></h1>
+    </section>
+    <section>
+        <h2><span style="margin-left: 1.5em">Popular Domestic Destinations</span></h2><br>
+        <div class="cards_text">
+            <div class="cards">
+                <div class="img_container">
+                    <img class="card_img" src="rajasthan.jpg" height="200px" width="400px" alt="">
+                </div>
+                <div class="text">
+                    <h4> &#9992; GOA</h4>
+                </div>
+            </div>
+            <div class="textt"><b>Tourism</b> is generally focused on the coastal areas of <b>Goa</b>, with lower tourist activity inland. In 2010, there were more than 2 million tourists reported to have visited Goa, about 1.2  million of whom were from abroad. As of 2013, <b>Goa</b> was a destination of choice for Indian and foreign tourists, particularly Britons and Russians, with limited means who wanted to party. The state was hopeful that changes could be made which would attract a more upscale demographic</div>
+        </div>
+        <div class="cards_text">
+            <div class="cards">
+                <div class="img_container">
+                    <img class="card_img" src="mitie.jpg" height="200px" width="400px" alt="">
+                </div>
+                <div class="text">
+                    <h4> &#9992; KASHMIR</h4>
+                </div>
+            </div>
+            <div class="textt"><b>Jammu & Kashmir</b>, a piece of heaven on earth, is the 19th largest state in India and it is located mostly all in the Himalayan mountains. It is also the only state in India with a Muslim-majority population. J&K consists of three main regions – Jammu, the Kashmir Valley and Ladakh. Between the three, the state offers beautiful verdant mountains and valleys, religious shrines and remote mountains. The people here are warm and hospitable, and they will welcome you into their land and homes easily. Each of these regions has its own culture, and this is evident in their daily lives and also their lifestyle.</div>
+        </div>
+        <div class="cards_text">
+
+            <div class="cards">
+                <div class="img_container">
+                    <img class="card_img" src="kundan.jpg" height="200px" width="400px" alt="">
+                </div>
+                <div class="text">
+                    <h4> &#9992; OOTY</h4>
+                </div>
+            </div>
+            <div class="textt"><b>Ooty</b> is the queen of hills stations and abundant in picturesque holiday spots for nature lovers. It is one of the most popular getaways for people in India. These articles on<b> Ooty</b> is the queen of hills stations and abundant in picturesque holiday spots for nature lovers. It is one of the most popular getaways for people in India. These articles on<b> Ooty</b> will tell you more about this beautiful hill station and help you plan your trip will tell you more about this beautiful hill station and help you plan your trip</div>
+        </div>
+        <h3><span style="color:purple;margin-left: 1.5em;">View All Destinations</span></h3>
+        
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="heading">
+            <h1>Top World Tourism Sites.</h1>       
+    </section>
+    <section class="cards_container">
+        <a href="https://en.wikipedia.org/wiki/Avengers_Campus">
+            <div class="cards">
+                <div class="img_container">
+                    <img class="card_img" src="spidder.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4> &#9992; Avengers Campus, Paris</h4>
+                </div>
+            </div>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Taj_Mahal">
+
+            <div class="cards">
+                <div class="img_container">
+                    <img class="card_img" src="taj.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4> &#9992; Taj Mahal, Agra</h4>
+                </div>
+            </div>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Statue_of_Liberty">
+
+            <div class="cards">
+                <div class="img_container">
+                    <img class="card_img" src="chuu.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4> &#9992; Statue of Liberty, New York</h4>
+                </div>
+            </div>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Sydney_Opera_House">
+
+            <div class="cards">
+                <div class="img_container">
+                    <img class="card_img" src="goa.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4> &#9992; Sydney Opera House, Sydney</h4>
+                </div>
+            </div>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Mount_Fuji">
+
+            <div class="cards">
+                <div class="img_container">
+                    <img class="card_img" src="abc.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4> &#9992; Mount Fuji, Japan</h4>
+                </div>
+            </div>
+        </a>
+    </section>
+    <footer>
+        <ul>
+            <li> <a style="color:white;" href=""> Back to top </a></li><br>
+            <li>
+                Contact us: <br>
+                <span>4MT22IC027</span><br>
+              <span>2022BECSIOT057@mite.ac.in</span><br>
+<br>
+            </li>
+            <li>About us</li>
+            <span>Jafray HABIBI</span><br/>
+            <a style="color:rgb(0, 0, 0);" href="https://instagram.com/jaff_habibi?igshid=MzRlODBiNWFlZA==">Instagram
+            </a><br/><a href="https://www.linkedin.com/in/riyaz-ahmed-khan-089a0325a">Linked In</a><br/>
+        </ul>
+    </footer>
+</body>
+</html>
